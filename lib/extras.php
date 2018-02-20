@@ -36,11 +36,17 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
  * Enable vCard Upload
  *
  */
-function be_enable_vcard_upload( $mime_types ){
+function ab_enable_vcard_upload( $mime_types ){
     $mime_types['vcf'] = 'text/x-vcard';
     return $mime_types;
 }
-add_filter('upload_mimes', __NAMESPACE__ . '\\be_enable_vcard_upload' );
+add_filter('upload_mimes', __NAMESPACE__ . '\\ab_enable_vcard_upload' );
+
+function ab_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes',  __NAMESPACE__ . '\\ab_mime_types');
 
 function bidirectional_acf_update_value( $value, $post_id, $field  ) {
 

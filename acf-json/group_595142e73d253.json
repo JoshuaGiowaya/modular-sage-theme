@@ -24,9 +24,9 @@
                     "sub_fields": [
                         {
                             "key": "field_596015a12ac7d",
-                            "label": "Background img",
-                            "name": "background_img",
-                            "type": "image",
+                            "label": "Hero",
+                            "name": "hero",
+                            "type": "clone",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -35,16 +35,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            "clone": [
+                                "group_5a8c953e9d5bb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
                         }
                     ],
                     "min": "",
@@ -73,5 +70,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499475262
+    "modified": 1519163170
 }
