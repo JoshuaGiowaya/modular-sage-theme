@@ -150,7 +150,7 @@ function the_module($module_name = '') {
         return false;
     }
 
-    locate_template( "templates/modules/".$module_name.".php", true, true );
+    locate_template( "templates/modules/".$module_name.".php", true, false );
 
 }
 function get_module($module_name = '') {
